@@ -1,0 +1,67 @@
+p {
+  font-size: 1.6em !important;
+}
+
+span {
+  font-size: 1.6em !important;
+}
+
+table.contact-table {
+  font-size: 1.6em;
+}
+
+hr.divider {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+table.contact-table td, table.contact-table th {
+  border: none;
+  padding: 10px;
+}
+
+table.contact-table tr td:last-child {
+  word-break: break-all;
+  font-size: .8em;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.sponsors {
+  text-align: center;
+}
+
+.content {
+  display: block;
+}
+
+.sponsor-img {
+  height: 100px;
+  margin: 30px 30px;
+}
+
+section {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.head-img-container {
+  height: 400px;
+  width: 100%;
+}
+
+.header-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.about h1, .sponsors h1 {
+  font-size: 3.5rem;
+}
