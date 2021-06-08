@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Economics of Carbon Capture, Use, &amp; Storage</title>
-    <link>http://www.skjorlien.github.io/</link>
-    <description>Recent content on Economics of Carbon Capture, Use, &amp; Storage</description>
+    <title>Project Participants on Economics of Carbon Capture, Use, &amp; Storage</title>
+    <link>http://www.skjorlien.github.io/participants/</link>
+    <description>Recent content in Project Participants on Economics of Carbon Capture, Use, &amp; Storage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Jun 2021 11:29:31 -0700</lastBuildDate><atom:link href="http://www.skjorlien.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Jun 2021 11:03:59 -0700</lastBuildDate><atom:link href="http://www.skjorlien.github.io/participants/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>http://www.skjorlien.github.io/participants/olmstead/</link>
@@ -50,24 +50,6 @@
       
       <guid>http://www.skjorlien.github.io/participants/hovorka/</guid>
       <description>Susan Hovorka is a sedimentologist who works on fluid flow in diverse applications, inlcuding water resource protection, oil production, and waste storage. She has led a team working geologic storage of CO 2 since 1998, with a focus on field studies, monitoring, and capacity estimation. Projects include saline injection at the Frio Test site and Cranfield Field and EOR studies at SACROC oil field, Cranfield, Hastings and West Ranch industrial CO 2 utilization projects and GoMCARB offshore charaterization study.</description>
-    </item>
-    
-    <item>
-      <title>Request for Proposals: Research on the Economics of CCUS</title>
-      <link>http://www.skjorlien.github.io/proposal/rfp/</link>
-      <pubDate>Fri, 04 Jun 2021 11:29:31 -0700</pubDate>
-      
-      <guid>http://www.skjorlien.github.io/proposal/rfp/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat ac nunc vehicula tempus. Nunc efficitur arcu suscipit elit tristique suscipit. Proin tincidunt nunc a nibh consectetur pellentesque. Vestibulum quam lorem, vulputate vel quam id, tincidunt varius risus. Quisque leo metus, rutrum at efficitur sit amet, luctus nec nisl. Cras vel tellus dignissim, laoreet tortor id, molestie nunc. Vestibulum fermentum tempus enim eget aliquet. Proin eget nisl magna. Curabitur posuere quam a felis imperdiet malesuada.</description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>http://www.skjorlien.github.io/projects/description/</link>
-      <pubDate>Fri, 04 Jun 2021 11:03:34 -0700</pubDate>
-      
-      <guid>http://www.skjorlien.github.io/projects/description/</guid>
-      <description>This is a place to write a blurb about the different components of this project.</description>
     </item>
     
   </channel>
