@@ -49,6 +49,14 @@ table.contact-table tr td:last-child {
   margin: 30px 30px;
 }
 
+.navigation-title {
+  line-height: normal !important;
+}
+
+.leftnav {
+  padding-top: 20px;
+}
+
 section {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -68,4 +76,29 @@ section {
 
 .about h1, .sponsors h1 {
   font-size: 3.5rem;
+}
+
+@media (min-width: 576px) {
+  .container {
+      max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+      max-width: 760px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+      max-width: 960px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1140px;
+  }
 }
