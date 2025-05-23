@@ -1,6 +1,8 @@
 #+title: Index
 #+author: Scott Kjorlien
 
+#+ATTR_HTML: :class fancy-img
+[[file:~/Projects/Code/Websites/scottkjorlien/static/images/headshot.jpg]]
 
 * Hello
 My name is Scott. I am a Ph.D. Candidate at the University of California, Berkeley. My fields are environmental economics and industrial organization. 
