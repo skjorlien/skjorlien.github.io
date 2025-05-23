@@ -1,0 +1,7 @@
+#+title: Contact
+
+
+
+Email me: [[mailto:scottkjorlien@berkeley.edu]]
+
+Github: [[https:github.com/skjorlien][skjorlien]]
