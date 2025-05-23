@@ -5,5 +5,5 @@
 * Hello
 My name is Scott. I am a Ph.D. Candidate at the University of California, Berkeley. My fields are environmental economics and industrial organization. 
 
-** Subheading
-To show what my research looks like
+
+This site is under development.

@@ -2,6 +2,5 @@
 
 
 
-Email me: [[mailto:scottkjorlien@berkeley.edu]]
+You can email me if you want scottkjorlien at berkeley dot com
 
-Github: [[https:github.com/skjorlien][skjorlien]]

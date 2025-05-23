@@ -1,6 +1,6 @@
 #+title: About Me
 
 
-* A storied past
+* About Me
 
-I have done a lot of things, and I hope to do some more things.
+I've done some things. But finishing my personal website is not one of them.
