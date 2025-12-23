@@ -1,6 +1,5 @@
 #+title: README - Scott Kjorlien dot com
 
-
 * Directory Structure 
 
 #+begin_src plain

@@ -1,132 +1,251 @@
-* {
-    box-sizing: border-box;
+/* Set up variables */
+.poiret-one-regular {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+:root {
+    /* --- Colors --- */
+    --primary-color: #007bff;          /* Blue */
+    --secondary-color: #6c757d;        /* Gray */
+    --accent-color: #28a745;           /* Green */
+    --text-color-dark: #333333;
+    --text-color-light: #ffffff;
+    --background-light: #f8f9fa;
+    --background-dark: #343a40;
+
+    /* --- Fonts --- */
+    --font-family-stylized: "Poiret One", sans-serif;
+    --font-family-body: 'Roboto', sans-serif;
+    --font-family-heading: 'Montserrat', sans-serif;
+    --font-size-small: 0.8rem;
+    --font-size-base: 1rem;
+    --font-size-large: 1.25rem;
+    --font-size-h1: 2.5rem;
+    --font-size-logo: 3.2rem;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --font-weight-stylized: 1000;
+
+    /* --- Other --- */
+    --border-radius-base: 0.25rem;
+    --spacing-md: 1rem;
+    --paper-pic-size-phone: 250px;
+    --paper-pic-size: 150px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--font-family-heading);
+    color: var(--secondary-color);
+}
+
+.small {
+    font-size: var(--font-size-small);
+    margin: 0px;
+}
+
+/* Set up the grid of main elements.*/
+html, body {
     margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+    padding:0;
+    background: var(--background-light);
+    color: var(--text-color-dark);
+    box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    font-family: var(--font-family-body);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 0.7rem;
+    margin: 0px;
     min-height: 100vh;
 }
 
-/* Navbar */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #1E1E2E;
-    color: #c6d0f5;
+nav, main, footer {
+    /* border: 1px solid var(--accent-color); */
 }
 
-nav ul {
+/* Do nav stuff  */
+nav {
+    background: var(--background-dark);
+    color: var(--primary-color);
+    padding: 2em;
+}
+
+main{
+    background: var(--background-light);
+}
+
+nav .content-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+nav .logo {
+    font-family: var(--font-family-stylized);
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-stylized);
+}
+
+nav ul.main-nav {
+    padding: 0;
+    margin: 0;
     list-style: none;
     display: flex;
-    gap: 1rem;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    gap: 3rem;
 }
 
-nav a {
-    color: #c6d0f5;
+.main-nav li a {
+    font-family: var(--font-family-stylized);
+    font-weight: var(--font-weight-stylized);
+    font-size: var(--font-size-large);
     text-decoration: none;
-    transition: color 0.2s;
 }
 
-nav a:hover {
-    color: #99D1DB;
+.main-nav li a:hover {
+    color: var(--accent-color);
 }
 
-/* Main content */
-main {
-    flex: 1;
+.main-nav li a:visited {
+    color: var(--primary-colo);
+}
+
+
+/* Set up the main body  */
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 1rem; /* Adjust padding for inner content */
+}
+
+/* Set up layouts */
+/* First, we have a simple pic with text layout */
+body.page-bio .bio-layout {
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    padding: 2rem;
-    /* text-align: center; */
-    background-color: #f5f5f5;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    align-items: center;
 }
 
-/* Footer */
-footer {
-    background-color: #1E1E2E;
-    color: #c6d0f5;
-    text-align: center;
+body.page-bio .bio-pic {
+    width: 250px;
+    max-width: 100%;
+}
+
+body.page-bio .bio-pic img {
+    max-width: 100%;
+    height: auto;   
+    display: block; 
+    border-radius: 90%;  /* Makes it circular */
+    /* object-fit: cover;   /\* Ensures the image covers the area, cropping if aspect ratio doesn't match *\/ */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+body.page-teaching h4 {
+    font-weight: var(--font-weight-normal);
+    margin-bottom: 0.3rem;
+}
+
+
+/* Research layout */
+body.page-research section.paper-layout {
+    display: flex;
+    gap: 1rem;
+    /* justify-content: left; */
+    flex-flow: column nowrap;
+    align-items: center;
     padding: 1rem;
 }
 
-#logo {
-    font-size: 2.5rem;
+body.page-research .paper-pic {
+    min-width: var(--paper-pic-size-phone);
+    height: var(--paper-pic-size-phone);
+    overflow: hidden;
 }
 
-/* Two-column layout */
-.two-column {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start; /* align top instead of center */
-  flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem;
+body.page-research .paper-pic img {
+    display: block;
+    width: var(--paper-pic-size-phone);
 }
 
-.two-column .left,
-.two-column .right {
-  flex: 1 1 400px;
+body.page-research .paper-content {
+    /* width: 200px; */
 }
 
-.two-column img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  /* transition: transform 0.3s ease; */
+body.page-research .paper-title {
+    margin-bottom: 0.4rem;
 }
 
-.two-column img:hover {
-  transform: scale(1.03);
+body.page-research .paper-content p {
+    display: block;
+    margin: 0;
+    font-family: var(--font-family-heading); 
 }
 
-/* Headings */
-h2 {
-  color: #1E1E2E;
-  margin-bottom: 0.5rem;
-  border-bottom: 2px solid #99D1DB;
-  display: inline-block;
-  padding-bottom: 0.2rem;
+body.page-research p.paper-journal {
+    font-style: italic;
 }
 
-/* Lists */
-ul {
-  list-style: none;
-  padding-left: 0;
+
+
+/* Breakpoint 1 */
+@media (min-width: 600px) {
+    nav .content-wrapper {
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1rem;
+    }
+
+    nav ul.main-nav {
+	flex-direction: row;
+	gap: 1rem;
+    }
+    nav .logo {
+	font-size: var(--font-size-logo);
+    }
+
+
+    body.page-research section.paper-layout {
+	display: flex;
+	gap: 1rem;
+	flex-direction: row;
+	padding: 1rem;
+    }
+
+    body.page-research .paper-pic {
+	min-width: var(--paper-pic-size);
+	height: var(--paper-pic-size);
+	overflow: hidden;
+    }
+
+    body.page-research .paper-pic img {
+	display: block;
+	width: var(--paper-pic-size);
+    }
+
+    
 }
 
-ul li {
-  position: relative;
-  padding-left: 1.8rem;
-  margin-bottom: 0.8rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  transition: color 0.2s;
-}
+@media (min-width: 900px) {
+    body.page-bio .bio-layout {
+	flex-direction: row;
+	/* align-items: top; */
+	justify-content: center;
+	gap: 3rem;
+    }
 
-/* Custom bullet using pseudo-element */
-ul li::before {
-  content: "➤"; /* you can switch to ★, ➤, or an emoji */
-  position: absolute;
-  left: 0;
-  color: #99D1DB;
-  font-weight: bold;
-}
+    body.page-bio .bio-pic {
+	width: 300px;
+	max-width: 100%;
+    }
 
-/* Hover effect on list items */
-/* ul li:hover { */
-/*   color: #99D1DB; */
-/* } */
-
-/* Optional: subtle divider between sections */
-.right > h2 {
-  margin-top: 1.5rem;
 }
