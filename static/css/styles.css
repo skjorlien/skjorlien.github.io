@@ -112,12 +112,12 @@ nav ul.main-nav {
     color: var(--primary-color);
 }
 
-.main-nav li a:hover {
-    color: var(--accent-color);
-}
-
 .main-nav li a:visited {
     color: var(--primary-color);
+}
+
+.main-nav li a:hover {
+    color: var(--accent-color);
 }
 
 
