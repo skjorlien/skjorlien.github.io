@@ -109,6 +109,7 @@ nav ul.main-nav {
     font-weight: var(--font-weight-stylized);
     font-size: var(--font-size-large);
     text-decoration: none;
+    color: var(--primary-color);
 }
 
 .main-nav li a:hover {
@@ -116,7 +117,7 @@ nav ul.main-nav {
 }
 
 .main-nav li a:visited {
-    color: var(--primary-colo);
+    color: var(--primary-color);
 }
 
 
