@@ -1,8 +1,0 @@
-#+title: About Me
-
-
-* About Me
-
-I've done some things in my life.
-
-But finishing my personal website is not one of them.
