@@ -8,13 +8,13 @@
 
 :root {
     /* --- Colors --- */
-    --primary-color: #007bff;          /* Blue */
-    --secondary-color: #6c757d;        /* Gray */
-    --accent-color: #28a745;           /* Green */
-    --text-color-dark: #333333;
-    --text-color-light: #ffffff;
-    --background-light: #f8f9fa;
-    --background-dark: #343a40;
+    --primary-color: #1f4e79;        /* Deep alpine blue (jacket/mountains) */
+    --secondary-color: #2b2f36;      /* Charcoal slate (shadows/linework) */
+    --accent-color: #e4572e;         /* Warm red-orange (backpack accents) */
+    --text-color-dark: #1a1d21;      /* Near-black, high contrast */
+    --text-color-light: #f5f7fa;     /* Icy off-white */
+    --background-light: #e9f1f7;     /* Cool sky blue-gray */
+    --background-dark: #16283a;      /* Night alpine blue */
 
     /* --- Fonts --- */
     --font-family-stylized: "Poiret One", sans-serif;
@@ -38,7 +38,7 @@
 
 h1, h2, h3, h4, h5 {
     font-family: var(--font-family-heading);
-    color: var(--secondary-color);
+    color: var(--text-color-dark);
 }
 
 .small {
@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5 {
 html, body {
     margin: 0;
     padding:0;
-    background: var(--background-light);
+    /* background: var(--background-light); */
     color: var(--text-color-dark);
     box-sizing: border-box;
 }
@@ -71,12 +71,12 @@ nav, main, footer {
 /* Do nav stuff  */
 nav {
     background: var(--background-dark);
-    color: var(--primary-color);
+    color: var(--text-color-light);
     padding: 2em;
 }
 
 main{
-    background: var(--background-light);
+    /* background: var(--background-light); */
 }
 
 nav .content-wrapper {
@@ -109,11 +109,11 @@ nav ul.main-nav {
     font-weight: var(--font-weight-stylized);
     font-size: var(--font-size-large);
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--text-color-light);
 }
 
 .main-nav li a:visited {
-    color: var(--primary-color);
+    color: var(--text-color-light);
 }
 
 .main-nav li a:hover {
@@ -196,6 +196,20 @@ body.page-research p.paper-journal {
     font-style: italic;
 }
 
+
+body .bg-img {
+    position: fixed;
+    bottom: -100px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/bg-trees.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.4;
+    z-index: -1;
+}
 
 
 /* Breakpoint 1 */
